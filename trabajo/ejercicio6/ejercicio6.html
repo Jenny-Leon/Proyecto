@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;600&family=Noto+Sans+HK:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/css/link1.css">
+    <title>Ejercicio 6</title>
+</head>
+<body class="estiloBody"></body>
+
+<header class="estiloHeader">
+    <nav>
+        <ul class="estiloUL">
+            
+            <li class="estiloLi"><a class="estiloLink" href="../menu.html">Home</a></li>
+            
+            <li class="estiloLi"><a class="estiloLink" href="../ejercicio1/ejercicio1.html">1</a></li>
+		<li class="estiloLi"><a class="estiloLink" href="../ejercicio2/ejercicio2.html">2</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio3/ejercicio3.html">3</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio4/ejercicio4.html">4</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio5/ejercicio5.html">5</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="ejercicio6.html">6</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio7/ejercicio7.html">7</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio8/ejercicio8.html">8</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio9/ejercicio9.html">9</a></li>
+        <li class="estiloLi"><a class="estiloLink" href="../ejercicio10/ejercicio10.html">10</a></li>
+        </ul>
+    </nav>
+  
+        </header>
+
+        <main class="estiloMain estiloH">
+            <h1 class="estiloTitulo">Ejercicio 6</h1>
+
+                <div class="contenedorTex">
+                    <script>
+                        function numPrimo(num) {
+                            if (num<=1 || num%1) {
+                                return false;
+                            }
+                            let m=Math.sqrt(num);
+                            for (let i=2; i<=m; i++) {
+                                if (num%i==0) {
+                                    return false;
+                                }
+                            }
+                            return true;
+                        }
+                     
+                        function primo()
+                        {
+                            let valor=parseInt(document.getElementById("valor").value);
+                            if (numPrimo(valor)) {
+                                document.getElementById("resultado").innerHTML="Este valor ("+valor+") es primo";
+                            } else {
+                                document.getElementById("resultado").innerHTML="Este valor ("+valor+") NO es primo";
+                            }
+                        }
+                        </script>
+                    </head>
+                    <body>
+                        <h4>Leer un número y definir si es primo o no</h4>
+ 
+                        <input type="text" id="valor" value="" placeholder="Digite un número">
+                        <input type="button" onclick="primo()" value="Calcular">
+                         
+                        <div id="resultado"></div>
+              
+        
+                </div>
+        
+            </section>
+        
+        </main>
+
+        <footer class="estiloFooter">
+
+	<div class="estiloGitHub">
+	    <img class="imgIcono" src="" alt="">
+	    <div class="estiloUsuario">
+		    <h1>by: Jenny Leon - Angie Ledesma - Mariana Medina </h1>
+		    <small> pepita@misena</small>
+        </div>
+	</div>
+</footer>
+</body>
+</html>
